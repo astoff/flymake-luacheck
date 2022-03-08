@@ -1,0 +1,10 @@
+#+title: flymake-luacheck
+
+A Flymake backend for Lua using the [[https://github.com/mpeterv/luacheck][luacheck]] program.  To use it, add
+
+#+begin_src emacs-lisp
+  (add-hook 'lua-mode-hook 'flymake-luacheck-setup)
+#+end_src
+
+to your init file.  Make sure to also activate =flymake-mode= in Lua
+buffers.
